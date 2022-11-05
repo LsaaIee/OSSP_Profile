@@ -4,93 +4,179 @@
 <head>
     <!--Requiredmetatags-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--BootstrapCSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-    <title>PageTitle</title>
-    <style>
-        .container {
-            width: 1280px;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!--Custom CSS Style-->
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Page</title>
 </head>
 
+<!--HTMLCode-->
 <body>
-    <!--HTMLCode-->
     <div class="container">
+        <h1>Jihak Isaac Lee's Profile Page</h1>
         <div class="main">
-            <div class="row">
-                <div class="col-md-4 mt-1">
-                    <div class="card text-center sidebar">
-                        <div class="card-body">
-                            <img src="img.jpg" width="300" height="500">
-                            <div class="mt-3">
-                                <h3>Jihak Lee</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8 mt-1">
-                    <div class="card mb-3 content">
-                        <h1 class="m-3 pt-3">Personal Information</h1>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <h5>Full Name</h5>
-                                </div>
-                                <div class="col-md-10 text-secondary">
-                                    Jihak Lee
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <h5>Affiliation</h5>
-                                </div>
-                                <div class="col-md-10 text-secondary">
-                                    <ul>
-                                        <li>Middle School: SYKIS</li>
-                                        <li>Hight School:  CRICS</li>
-                                        <li>University:    SKKU</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <h5>Contact</h5>
-                                </div>
-                                <div class="col-md-10 text-secondary">
-                                    Email: leejihak02@gmail.com
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <h5>GitHub Account</h5>
-                                </div>
-                                <div class="col-md-10 text-secondary">
-                                    LsaaIee
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row">
-                                <div class="col-md-10">
-                                    <h5>Interests</h5>
-                                </div>
-                                <div class="col-md-10 text-secondary">
-                                    <ul>
-                                        <li>Watch Anime</li>
-                                        <li>Play Volleyball</li>
-                                        <li>Play Instruments</li>
-                                        <li>Pet My Dog</li>
-                                        <li>Read Novels</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <img src="img.png" width="800" height="450">
+        </div>
+        <div id="Personal" class="d-grid gap-3 Personal">
+            <h3>
+                <i class="bi bi-file-earmark-person"></i>
+                Personal Information
+            </h3>
+        </div>
+        <div id="name" class="p-2 bg-light border name">
+            <h5>
+                <i class="bi bi-bookmark-star"></i>
+                Full Name
+            </h5>
+            <div id="myName" class="d-inline myName">
+                <h7>Jihak Isaac Lee</h7>
+            </div>
+        </div>
+        <div id="age" class="p-2 bg-light border age">
+            <h5>
+                <i class="bi bi-bookmark-star"></i>
+                Age
+            </h5>
+            <div id="Nayi" class="d-inline Nayi">
+                <h7>20 (21 in Korean age)</h7>
+            </div>
+        </div> 
+        <div id="Affiliation" class="p-2 bg-light border Affiliation">
+            <h5>
+                <i class="bi bi-bookmark-star"></i>
+                Affiliation
+            </h5>
+            <div class="dflex mb-2">
+                <table class="bg-secondary rounded-2 table-bordered" color="white">
+                    <tbody>
+                        <tr>
+                            <th>Schools</th>
+                            <th>Academic Background</th>
+                        </tr>
+                        <tr>
+                            <td>Middle School</td>
+                            <td>
+                                <a href="http://sykis.withschool.co.kr/">SYKIS</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>High School</td>
+                            <td>
+                                <a href="https://crics.asia/">CRICS</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>University</td>
+                            <td>
+                                <a href="https://www.skku.edu/skku/index.do">SKKU</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="Contact" class="p-2 bg-light border Contact">
+            <h5>
+                <i class="bi bi-bookmark-star"></i>
+                Contact
+            </h5>
+            <div id="email" class="d-inline email">
+                <h7>Email: leejihak02@gmail.com</h7>
+            </div>
+        </div>
+        <div id="GitHub" class="p-2 bg-light border GitHub">
+            <h5>
+                <i class="bi bi-bookmark-star"></i>
+                GitHub Account
+            </h5>
+            <div id="git" class="d-inline git">
+                <h7>leejihak02@gmail.com (LsaaIee)</h7>
+            </div>
+        </div>
+        <div id="Interests" class="p-2 bg-light border Interests">
+        <h5>
+            <i class="bi bi-bookmark-star"></i>
+            Interests
+        </h5>
+            <ul>
+                <li>Watch Anime</li>
+                <li>Play Volleyball</li>
+                <li>Play Instruments</li>
+                <li>Pet My Dog</li>
+                <li>Read Novels</li>
+            </ul>
+        </div>
+        <div id="morePics" class="p-2 bg-light border morePics">
+            <h5>
+                <i class="bi bi-bookmark-star"></i>
+                More Pictures of My Dog
+            </h5>
+            <div id="updates" class="d-inline updates">
+                <h7>For future updates to the album, <a href="https://photos.app.goo.gl/jF1wF5Rw3c8oK27n9" style="color:blue;">click!</a></h7>
+            </div>
+            <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
+            <div class="pa-gallery-player-widget" style="width:100%; height:480px; display:none;"
+            data-link="https://photos.app.goo.gl/jF1wF5Rw3c8oK27n9"
+            data-title="goorm_pics"
+            data-description="55 new items added to shared album">
+            <object data="https://lh3.googleusercontent.com/1yWYQNp5026sZ0_01626bb71ZVQZ8I-tdvouwTO4WHRP1KOuDWfJ5kHrYULhHwcjdRUjQWgw21NrXfqgp5AnLuyt4bevvGoBJRLFy0mqvWHbOYUGA19ueg8U73yYPGO6vV_HMhXSMA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/E0xFEa5wRAupuRu8vd_X78EFleMbzbEErIFoHr_UCjVHVLjfLYlolcZUQKL88CE9g44bEBGiW1uBSLwgMySMKJcmTBgHBi6o6s5FUzVldn_ItIqkpZf6icqsRry-jRgsGax7_EFQew=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/7Wv1AuXlLRonTIV14IREy4u3JtrSKE3BG3EzxKqh6xo-TSAL0gt-mWzVdTwObeRoB0eFyuTonVHZyCiswa2khjhMicJn7qAyyX0rreSzj-TzcTJ2qx9dQL0NgzCeaRWdcC0HRkY3LA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/Xh7vLUPxhF5VSzOV4ybwiZckSrj0YvhysSDdOV8C2dCJi9mT6m5ohLWj9LjvR_6SYypbbQpQNH8zsYV8gL1Vr-osXtA9hKrDqXeHIdTULHQGf1DZuH4ygTgjI5l_jeMORP-eWFyf5g=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/U7fU-b-C6Nl8DozyN5ax1jq0KNibrvJ3GiIk8RFYRSKuK8b6eOPTltWS8K6PAXkbG6VUFwzZ8Qfd8P3bqKHivuf-QhDA81SvIlOTvGZYt0YlqKJeHsCNKfgEnQNIEsKr5wQV4wKBsg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/Ifbz9eYSEXOSJVIKKlfLQGzDQSvBWxMbo5iHBGpvXTMnUIVNs1F7KUxvsAxVs18_pjsW1_lJqsd8Zmxgr7uz8HC_DcIi8YO7ynjlnVdXDPSgDlQVY93_ENihYElMIPzA3Z87UKENMg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/LSZDywQtGUiNnCrbLPnhsdX13pKqZcGxUdKruxZh9g4otNlpqgKHAqrOkm474av-AXB2tDA46cva-b_Nr6iWWdjVBtm3mlpzN1nqeJXtx6aLVcf1ELW4J4cf-_MpszqnXoalHG_AMQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/hTYgF0v69V7Y_h14JIQPw7IIwsmTL5KhrES6pj6Vp1zfR3oFal5iOFX0cjocKmq0FxJ9gCEA4fxBTQysJfqtoRHIvyFLHtRnIY7afaKXj7oMmTjlRbS3ZJ385hDyvjf0cfZUvkD74g=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/RTblMsvEjN1YQ4-8rrPtJkdyXTuOBcbo0s8zXBafM4_1A4HUYRXpb9DgJfmT1EbsA__ZSV9GOVffRnNso5ulIV-wvK40sEF_XnXzVeuY0cY8TswTFBucVstVNXtn44NhFDQNb0WnYw=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/Ha2UTaDJmBb3ZlCZwbKyXYWk9SomOKd1X8mz1JukRRypS42kroURsdiXX9TfU8bp6pH6Wf78p255UAVjfmi_T-GRU-yIVs8aQxiOUeIvsVarvzYJ5zl_U8oi8onXfMgSlZzbQRtdOw=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/GbDyplVAWUk5QnJrj2xmvRZaoSSoct2ee6080XD88yyi7i2YJ8zNtQOqWuShW54KfRn9JbhqHCyHybAHwEV4QosSejDCAldBpJypMO0MRH1TmbU-6g6zv990wwzmwIQJ8vLj4B43pA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/3ZkoiWU4nmaLc4OfkXA-W34rXaHjDOHbsvrQez6lfi7SMBtAmhOx-BnC2aEOVydiy28lmeYJc12-D7bde3czNuqvMH-0rgmjRTKl7a6YnnvednDBRMV9CQ1QAKodT9ur8GtBv4zsxQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/zN9sOQawQ6o0HWl2pM5YNWNALZZniAXLw8N54_Cu4tBmrvTgHYVOs5BlCq9dz8oFOKtINv_MTIwG28zH8la5Vwv5AjVPcLE_2ubhU9ezdoJKC0CTdZj1W5ktMg4S8-Q37Ctz4vhtyg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/En7H5UjD_Zo4kxK8EVN71d2b2xquMWuYBmWSPmmG2OuxpE2rvlBXJoSzNo0FEAxlyKMUUuDCPIAGAhPqjEU4CjGj7WcBMot5gVvogf5vwDIqgnvbis_GKM2QAUclJ0lNWgrCXJWbrg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/JY2TP_IWSzJ0xlyqdqggRMAF5JorCKJbhqs4sKkKsnVNXoJX2Aa8v5WLpNRUfKmt1amls-Daa0MnWZ-GThb7yQ-0GN3EylTbvMaJTEC_8gtU5gwG1NUKU_QQArlOZdcgQ1DuhbTEjw=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/GLzr9UWm0VAzvIDCv02jNOJQXQSx0dz2ZKrkD1F_a9DCJ1BgDVyvwtueWal0yWMvJslPqDdTiwHgVCeRVeG8AH5GBi2scnfuJvpitNGdP0akV9OMYI4Lq1hYuZwFKpz9HmkBLS0MDQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/RPjEcGDx8jZZ9fyvngZlDcWcDO5b_V5MVouW95YH2El2KU5Rg9pxjauThUNGDoSVbyaPqb6FRQjz7QJrzsojQJjjvLC8dI9BsjI_39F-q8rJOf3sftyNm8I5kLdLaLN53eHXrq6aMg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/T2TBbPvxppefgwDW-MC9kqDGL0csvTjrVtS8BishOsneh1bViu7RqAJfd5bKACVDjUGB_WhTcpDq8Np1TDDTdBs-kCE307khGkb5St2GfHxGT_aulZUhxarzbTH8EUi-H3HGJqxfIA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/w-BDWKOTagseSXzMCJ8Or6MaVpUhU-5joHbb5GPuqfHysxeDOQ4Tt677-OnWgwywTDBeMBwk8yeIvXBDXK1J1piCT3gtkx6uZ7GfVi5Ss3mUEkFt6Fs03jHyPPmmix5VVOFUkxDRFw=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/m3vjq5vwHvPjUB8nJJVwhQeoHLQf_mxsuYcA3HfAeoLgILcNJvjNXOUDR0k704D84SHJSHZyaaafk5URJEvAY9YZzXBZdKvLgKYnvgyNK2rYtO2luYbT6jfJg3UQVUKnXPzr7pY1BQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/cxESvXlbxKM3Ba5S7JnjEJQjT-d0lg6-brTFci9jXlmQTxBim4uI4LVj0gIjjcH90H9rT6ydyrWDoeYlJGyK2Z6mCJNq3XVJkNyRKz7lBTH7Ysas8xoS6fo5kESHIM7qPK7p1-BVTw=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/dihN_1NwHjosB5DH09HDOmJQXup9uMk7MJyaoGmZTB9iAb8cYEX41dXjG7uyOw5QuB05lOCANvTSk09LVFHU7J2bOAlYG_Xab5NjpsKFpQEOZLs7MhAVQFjbRrh0BxG4w15TisDa4g=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/m0cG2_iPyWdiqC9slwBAEyoipCaE0K6Bo28MTtu__I9oqPkiFFlLG4HDy-oxhP_QrNdHnFSSbTR9Xphhr8upecrma_R7ip4LI5Tux-B0PyVp8AFLd-Lvq6IzgvmK8z6o_5ArC8kixg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/EZS0HIkZkbdC5oh92_ouhyYplC9OEHhIkfcqFHwE9UZfAhb7qCUiOvbZya-cVfThhNo3e9BZpi56OdOPT1pWXwtcmnY2P2bjSw2VZkmbXQ5n6V4uMBJ0PlXrkFfx36-AVLBNFBvotw=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/_ffecHvy9eZPVfsUHcTowRP-0_dwN41EhcwlfR3INF0lBN-9B5TmeretW8YLEGhF1muglkuu7X-y2bzysX5rASe7xM5i3SbJH-c8RMOVR0i22VQC30lLPPpCCv0WKcLfpwCWLmcdlw=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/sdxCiEG927g5F_cEjs8T8XViWQzcwIfZIbx1ycUecmsgS0pQEmw7cql8-_S0SszW8alaWvdMPpMDICmU5H8Jy6PDE6NM05zwlRKQT4_HOKzX3LIBPH9QX8FQjGLpcCU97LJVp5LHJQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/vJGKSBHJqNBabji9OpOs6LMYRlRCkQf-2rwvNYyV85H0Jmtuv13GjuAp9cfIY7xMZoqmAFEbjZQIMzWXbbJOyXLqifBkIZwQyRZsuuehQWKD1OKNC9jlD7WChQNWx63TJFBEAZ1NxA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/iulUWAp374P3AuwQMCxmfbb8Xjr5iabK-rhqR9fB69OQuuuIk7-gLPkEVkcbRJNmaaKNCWTDGS69D2vRLyjfXZtQLULjkdm5-jEcnvrSlovMjTuneem0__Vys-2r-0tQ5fdtO7LQ2w=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/aJ61BOQFqoXV3aDBosIGpqPzDOUedZ7I1k4XzQsfqj2of1QJJuSbrDKsuwdATvvUFVp1VQNvHv9rM0KcByy_zExXWGRC2PgpZDComHkXX-urIrjt8RN4Mq8natb--EUs_qPMlU9-BQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/zI_lraqaW1Kr5qR5-SadXCgQdc1j04307GXxr7LVds0MYujPaqxzGYS2SZMeG2llK49RaOW_5rNrX6JLqcSFE6Kd4vo4Vyz-c8IyWsyRqGhgtAW47bY_eqjnjvVpT9TCh2TgwS4ykw=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/OV3GY_KJyXMYEkOEaAGlHDSlG7g0hWyhHAwpY5mfg5rqVvJpqzGRIH6wb1koCZtavK9OKImrA_WfLJllHftrgjkpIUP5Ion4_Qkclo5f9aqz0MwPNTIDNAYvt4xRajV2WfCGLWzg6Q=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/AbAf9ZuMO7hFsJBv2vho9kJ7KpdJh-dNRmYrDTVawSxolcDti4zOeFajyOBoIvPdu9W5Vfb33hLAgcg-k6t4eJFa7lC4hfJ2iePnb148JQIxOWcREizPqZfKwVsO6grjJ_N5Am50Mg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/p6USzlmQT2nCzYeLlHmww_TZ9FJ61hy4PG-QhMA6kMdo_ySTSSOHMJ4sCdUR5LnIrmJnViapMaSdW2kcfYIlz65TuaEd7AgNC2yUgjDkqKLe32Axo0AkpQg9DcyAvRJ4bFmLXXR0vg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/uQHlD2h3jvWqiT-5496fQAtplDagoXC1vSrUC9CXO60WvbBwjwdNhXQpDGbEJGwoCZrSLxXcKWZb2nlqbOuRs_R0CEi8tcTAO-DOryjhXkd-R4R5tQ1V_iepARUnkInKOrJDQWeWeA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/sM1zEJpHcZq3s0154sIJwFWj4kEGEqdYSmXsLiOpq1mQZ6zBtXA5NMTgE8TeCxbKP1VdoE8_yPtS_TknSkIgn1y5KAoagU1m65GYF75seHb277l6bLjsEwCOApy_KDFBVFarJ9VglQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/RlISzcf8Hq2mYo635Hf9Yu9It2G0cwCeg3rkXmLO_eTdmRE0Z-8p-sEXf0DzoU5eXZHSaNMsVztYUcrkd6i-FUs-aV0kr7ZhNQ7LnPIJieOfiSATjj8IPjODuG_Nms5tEt4hRV_02A=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/3QAhQ0Fp4ykE3_OhcQR-Rz7Fk0AfGbNBsYZq6-fJ7KWkxgWdoblVjlwSHK7h9M9e8asRrSf3oEnIFOGdVyRUdXi5yJH3EcGMdrOlhb5bl65FhMipT_sKFF8nGcz7io5i_D5M7LTcfQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/-ASqXTT6jtGJUJiAhUjGBI6JgC1a7P2ALXx10kK6SHCSCJUGlQed8oiZ7vVCLBZU9yHrOpUDjBLZBpx0iMho9-nEbJpuYJ9gp63lVHGD3j90rX5EORSnhhEVS1hiZrWik55efbxcpg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/U2sd9qq0ZVIFPjoZTbPCLGjWrsHCqiipb2CRcfAryRkkVDeOK7oFuyQ-4dNybhheTUuoP_l2YIT3seGHYQ4EdE5n_-KWcgWSXqVesbKk-ds1Lm6K6CAuRkcStoONkO-q_yUPV3QYZg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/NJgPl-FJ2v-xhdTISiBu4SZGvtXC8jvsDTVkJ0mUGsgg9uNmsgsEcco5cQCdUk8hn_VWufagHH-wFce9a1GFIDQeebbhnpuwKubv1wy1FmSBMhvJtjMUp5ibHGnn-dyhNRYMZOURZA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/p02vNH0ZdAsQFb4c7uWYC66-sbVaPfs8UdW29UYpQDSMLohnTFBtG6ZojFIu--a2JCAL9VvNs8hND7j99Iej-7vDzF88HpJyUBPhnIq5eULHzqsrt_VNUdjRpsqKnVYGz8ZIJUb-fA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/vOvao-C0I0dtZaJC0lghlMLQcNApgTDQee6U62oeZyCwIVoFYjmv4r7VtUwSivHoYNGJM2-8raxsiiVq3nBpARfvAaRn_YK_O8JwSB5Jle4L0TllSFaNIRagii7iNCMj_z2D6UvcuA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/-VeLIVk3hGlMOygh8pB2O0fUEOqCAb6aXzGZtADA5HIS6xDYlfF1hE4niFNFQJ1ICwWK3s9q4Ty_f5DkH2FDGzorFTQnQKdOT9wkj3AcZZhB7nmny3LvrpxpZI_4LZ00ixVOIW75NQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/Uxnf8CE6FaUfGK31Ka1KM5mMDEE28hZjcIDw9FegR2iR2OpyHKllMkPwn6GvxJqGrGM53A5rxaKfll-1wq3Z8IN3_4cY2hQwUiXeRNZhI_5qTQ6nsjqkP7FiBaZqaWNhMgONiFvH9g=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/KZzmO2Afjrk-4VUdyXuru8TErIt-4Dy21o6wHKuYNrTrDDnbrlaWELA2WDhObcevD6RSjOYdYScosfMEgkgcFytJ4poa49L52z53Xs-N7t2WUPyXJaxk5To3PZYAsdcNyiIJh7KG3g=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/pE8DvTvMjw1pf6HNbH2qqZLQ-D_wmWybHwI_VcRLe0gi9vtEkhCnk7d6bwcFX2g6it-X3HPPamgiI-wPUDwUX5KfVjwa5BeZogL8Nsosci2jLOUbbTQ0tZtigwVrKAmFpobbaH3kpw=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/iUIFMTSd7QhBJV1OPnkGQcWWRGHCSr08SlA8XtzFvRQi4_zCPgfL_kWzUquyRQuD2yk6vkU7bmXHAozZoiDJbJKTTP4WCHrcgpn15OoIRlxEN_ORCZEJ6KeeEhARIQfYDBitNjhoFg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/vwzZAXCIo5CVujZ-tSfcAla-YlpgnSJfsCobyDQuZpLQ7iBTSkdcsCJo5XeOEQMnX5cLUEpAK3mAK0Y1_fQtR_O4T15IqA7Ewz4GXWhVDAvWnjG4IGikMMeSJwoj1gm5kgmvSeAFPg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/ZGk4ikxg7bIwivgD7umKF5TP-ajFn9GHZZyYoLjSfSHH8MKOQWJdHktq4VZ9TGTSWMeaHk1_eXBBW5oSrzNzxaIEthjrsVD6R3NClVTLTivMHp3DzOmQpO6WC0GQTfIx5SFfBKp04w=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/vXR2-q-HypWITo0ZoMzFVqgWAa6rXx9BE8IiP9CYdhDtAcmUi2QPsPq99vEGdQ4MFWwRDn7NsxRWPFLGuL93qmBzyTvAPS-_99IRrlXDITvdO96ymYuN_oaDJS9c3st7y5OgiZmH8w=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/OU4H0CP2oLPdN1hTAUuQY5FvvfxstVMIhIqQA-OpFPIOoTBVrKyGr3UoI8od2lgQUNPuBltxfZU02NZbii7kd0ZS6bVMf9gQrp71nEGHlFyj-qqaltF9RFRcsTGtU9NdaimP-F9mWA=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/6F8DWYx7jZ-Ysb44iflM3IKGxgo35yWgeUTk-qQJsK3dxU8lG5QFaEVrWoNrkHB2Nu6mzAmJ1dJbnImHWF0rmqFGshcmkpYg5vhrOXpDFfdNFfX1bOgNg5Y5MG9KzMtD-nbXf-UCpg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/V-uC5KBphOrUc3ViKHK7-WCTfcpR2pxIjtPGF0JkUV-IjTNQlv-h5T538stdJctA7L-Ix_WiBdGnOY-t4-yYTgbZg42KAz3GQ61YbIXGV24rup99aUKZKqWXLzaMzmyoCDah6bl0lQ=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/R8PI_Hr5Hj9l_CUpn7uh_rkKneOE2onGTBaGrfN3N6W58QYCYGcvO3cAy3kRtNnkABUvew3otleICQ2rpcFolnbPc6OYjwia2-dNyF_sR_CesLS2_ANbkV73r3Al96OYOwRUfNmHDg=w1920-h1080"></object>
+            <object data="https://lh3.googleusercontent.com/AQYUlvskhyy9x2Pk_8qsghAKFFZzKEo6bcHfqAmxb9BZZhfH1vP6PwFEaIXjdu5oz5WrEUUVCCYdrDALe-10nCQbXoiilHkVdsTeVQm0IenvY8BbFv9B2tRLbfEinPgM2EM_uVpdbQ=w1920-h1080"></object>
             </div>
         </div>
     </div>
